@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>Control de Ventas y Gastos · Eddy Pacheco</title>
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-content">
+        <div class="logo">
+            <h1>FeriaControl <span>· gestión simple</span></h1>
+        </div>
+        <a href="#" class="cta-top"><i class="fas fa-mobile-alt"></i> Acceder al sistema</a>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- HERO / PRESENTACIÓN -->
+    <section class="hero">
+        <div class="badge-container">
+            <span class="badge"><i class="fas fa-carrot"></i> Verdulerías</span>
+            <span class="badge"><i class="fas fa-truck"></i> Food Trucks</span>
+            <span class="badge"><i class="fas fa-hand-holding-usd"></i> Ferias libres</span>
+        </div>
+        <h2>Control diario de ventas y gastos <span class="highlight">sin complicaciones</span></h2>
+        <p>Registros rápidos, ganancia automática y reportes semanales. Diseñado para quien vende en la feria, en la calle o en un food truck.</p>
+    </section>
+
+    <!-- PANEL DE CONTROL INTERACTIVO (FUNCIONAL) -->
+    <section class="panel-principal">
+        <div class="panel-title">
+            <i class="fas fa-table"></i>
+            <h3>Panel de control diario</h3>
+        </div>
+        <div class="panel-contenido">
+            <!-- Resumen de totales -->
+            <div class="resumen-dia">
+                <div class="caja-total">
+                    <div class="label"><i class="fas fa-shopping-cart"></i> Ventas</div>
+                    <div class="valor" id="totalVentas">$0</div>
+                </div>
+                <div class="caja-total">
+                    <div class="label"><i class="fas fa-wallet"></i> Gastos</div>
+                    <div class="valor" id="totalGastos">$0</div>
+                </div>
+                <div class="caja-total ganancia">
+                    <div class="label"><i class="fas fa-chart-line"></i> Ganancia</div>
+                    <div class="valor" id="ganancia">$0</div>
+                </div>
+            </div>
+
+            <!-- Botones de acción -->
+            <div class="acciones">
+                <button class="btn-accion" id="btnVenta"><i class="fas fa-plus-circle"></i> Venta $15.000</button>
+                <button class="btn-accion" id="btnGasto"><i class="fas fa-minus-circle"></i> Gasto $4.500</button>
+                <button class="btn-accion" id="btnReset"><i class="fas fa-undo-alt"></i> Reiniciar</button>
+            </div>
+
+            <!-- Historial de movimientos -->
+            <div class="historial">
+                <p><i class="fas fa-history"></i> Últimos movimientos</p>
+                <ul id="lista-registros">
+                    <li class="venta-item"> <span>Venta verdulería</span> <strong>+$15.000</strong> </li>
+                    <li class="gasto-item"> <span>Compra de mercadería</span> <strong>-$4.500</strong> </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FUNCIONALIDADES -->
+    <section class="features">
+        <h2>Todo lo que necesitas para tu negocio</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h4>Rápido</h4>
+                <p>Registros en 2 toques. Botones grandes, ideal para ferias.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-calculator"></i>
+                <h4>Automático</h4>
+                <p>Ganancias y totales al instante. Sin errores.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-calendar-week"></i>
+                <h4>Reporte semanal</h4>
+                <p>Agrupación por día y semana para que veas la evolución.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-boxes"></i>
+                <h4>Control de stock</h4>
+                <p>Versión completa con inventario incluido.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA (pasos del flujo) -->
+    <section class="como-funciona">
+        <h3>Así de fácil opera el sistema</h3>
+        <div class="pasos-grid">
+            <div class="paso">
+                <div class="paso-num">1</div>
+                <p>Inicia sesión rápidamente</p>
+            </div>
+            <div class="paso">
+                <div class="paso-num">2</div>
+                <p>Pantalla principal del día</p>
+            </div>
+            <div class="paso">
+                <div class="paso-num">3</div>
+                <p>Registra venta o gasto</p>
+            </div>
+            <div class="paso">
+                <div class="paso-num">4</div>
+                <p>Ganancia automática</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LLAMADO A LA ACCIÓN -->
+    <section class="cta-final">
+        <h3>¿Listo para organizar tu negocio?</h3>
+        <p>Sin conexión, exportación de reportes, control de stock y más funciones.</p>
+        <a href="#" class="btn-cta">Solicitar información</a>
+    </section>
+
+</main>
+
+<!-- FOOTER CON INFORMACIÓN PROFESIONAL -->
+<footer>
+    <div class="container">
+        <div class="footer-info">
+            <p class="disenado">Diseñado Por <strong>Eddy Pacheco</strong></p>
+            <p class="contacto">
+                <i class="fas fa-envelope"></i> eddy15pacheco@gmail.com &nbsp; | &nbsp; 
+                <i class="fas fa-phone-alt"></i> +58 4269154122
+            </p>
+            <p class="copyright">© 2026 - Todos los derechos reservados</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">Términos</a>
+            <a href="#">Privacidad</a>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript principal -->
+<script src="js/app.js"></script>
+</body>
+</html>
